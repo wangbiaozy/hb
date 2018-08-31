@@ -1,0 +1,233 @@
+html,body{
+    background-color: #f62980;
+}
+section.main{
+    position: relative;
+    width: 7.5rem;
+    height: 12.06rem;
+    background: url(../images/pic_bg_1.png) center no-repeat;
+    background-size: cover;
+    >a:nth-child(1){
+        position: absolute;
+        top: .41rem;
+        right: .54rem;
+        font-size: .3rem;
+        line-height: 1em;
+        color: #ffebee;
+        z-index: 100;
+    }
+    >div.detail{
+        position: absolute;
+        left: 0;
+        top: 0;
+        box-sizing: border-box;
+        padding-top: 2.6rem;
+        width: 7.5rem;
+        height: 12.06rem;
+        background: url(../images/pic_bg_5.png) center no-repeat;
+        background-size: cover;
+        >p:nth-child(1){
+            width: 100%;
+            font-size: .36rem;
+            text-align: center;
+            line-height: 1.8em;
+            color: #b113d2;
+            i{
+                font-style: normal;
+                font-size: .48rem;
+                color: #f55c5a;
+            }
+        }
+        >a{
+            margin: .65rem auto;
+            display: block;
+            width: 4.58rem;
+            height: .94rem;
+            background: url(../images/btn_5.png) center no-repeat;
+            background-size: cover;
+        }
+        >p:nth-child(3){
+            margin: 2.3rem auto .48rem;
+            width: 100%;
+            text-align: center;
+            font-size: .3rem;
+            color: #b113d2;
+        }
+        >div{
+            overflow: hidden;
+            margin: 0 auto;
+            width: 6.78rem;
+            height: 2.6rem;
+            ul{
+                position: relative;
+                li{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: .36rem;
+                    margin-bottom: .44rem;
+                    h3{
+                        font-size: .36rem;
+                        color: #ffaa04;
+                    }
+                    p{
+                        margin: 0 .72rem 0 .25rem;
+                        font-size: .3rem;
+                        color: #ffaa04;
+                    }
+                    span{
+                        font-size: .3rem;
+                        color: #968a99;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+/* 登录弹窗 */
+section.login{
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 0;
+    box-sizing: border-box;
+    padding-top: 3.05rem;
+    width: 7.5rem;
+    height: 7.12rem;
+    background: url(../images/tc_login.png) center no-repeat;
+    background-size: cover;
+    z-index: 200;
+    >div:nth-child(1),div:nth-child(2){
+        position: relative;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding-left: .75rem;
+        width: 5.13rem;
+        height: .68rem;
+        border: 3px solid #fa7d07;
+        border-radius: .1rem;
+        span{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        input:nth-child(2){
+            width: 2.5rem;
+            height: 100%;
+            font-size: .3rem;
+            background-color: transparent;
+            border: none;
+        }
+        &:nth-child(1){
+            margin-bottom: .34rem;
+            span{
+                left: .18rem;
+                width: .25rem;
+                height: .49rem;
+                background: url(../images/icon_1.png) center no-repeat;
+                background-size: cover;
+            }
+        }
+        &:nth-child(2){
+            span{
+                left: .12rem;
+                width: .36rem;
+                height: .42rem;
+                background: url(../images/icon_2.png) center no-repeat;
+                background-size: cover;
+            }
+            input:nth-child(3){
+                width: 1.56rem;
+                height: .48rem;
+                font-size: .24rem;
+                color: #fffefe;
+                background-color: #7e57cc;
+                border-radius: .1rem;
+                border: none;
+            }
+        }
+    }
+    >div:nth-child(3){
+        a:nth-child(1){
+            display: block;
+            margin: .54rem auto 0;
+            width: 4.58rem;
+            height: .94rem;
+            background: url(../images/btn_3.png) center no-repeat;
+            background-size: cover;
+        }
+        a:nth-child(2){
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: -1.26rem;
+            width: .69rem;
+            height: 1.26rem;
+            background: url(../images/close.png) center no-repeat;
+            background-size: cover;
+        }
+    }
+    
+}
+
+/* 活动规则弹窗 */
+section.rule{
+    display: none;
+    position: fixed;
+    top: 1.21rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-sizing: border-box;
+    padding-top: 1.2rem;
+    width: 7.18rem;
+    height: 9.61rem;
+    background: url(../images/rule_box.png) center no-repeat;
+    background-size: cover;
+    z-index: 200;
+    a:nth-child(1){
+        position: absolute;
+        right: 0;
+        top: -.1rem;
+        width: .69rem;
+        height: .69rem;
+        background: url(../images/tc_close.png) center no-repeat;
+        background-size: cover;
+    }
+    ul{
+        overflow: scroll;
+        margin: 0 auto;
+        width: 6.1rem;
+        height: 6.3rem;
+        li{
+            font-size: .26rem;
+            line-height: 2em;
+            color: #b113d2;
+        }
+    }
+    a:nth-child(3){
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: .9rem;
+        width: 4.58rem;
+        height: .94rem;
+        background: url(../images/btn_3.png) center no-repeat;
+        background-size: cover;
+    }
+}
+/* 遮罩层 */
+section.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 150;
+}
